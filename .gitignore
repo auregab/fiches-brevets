@@ -1,2 +1,8 @@
-*.docx
-*.html
+# Ignore everything
+*
+
+# But not directories (needed so Git can see files inside)
+!*/
+
+# Unignore all .Rmd files
+!*.Rmd
