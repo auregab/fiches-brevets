@@ -1,0 +1,701 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+Conseils~:
+
+\begin{itemize}
+\item
+  Lire partie G brevetabilité des directives OEB et directives INPI
+\item
+  Fiches de cours Jeannequin sur google
+\item
+  Lister tous les articles du CPI et les apprendre par cœur
+\item
+  Lire les G de la Grande Chambre de Recours
+\item
+\end{itemize}
+
+Epreuve technique~:
+
+\begin{itemize}
+\item
+  Brevetabilité sur 8 points
+\item
+  Contrefaçon sur 5-6 points
+\item
+  Question juridique 6 points
+\item
+  Répondre à \ul{toutes} les questions
+\end{itemize}
+
+Pages~:
+
+\begin{itemize}
+\item
+  une première page~: pour la première question juridique
+\item
+  une deuxième page~: pour la deuxième question juridique
+\item
+  une première page~: pour la brevetabilité A138(1)e)
+\item
+  \_\_\_ deuxième page~: pour la brevetabilité A138(1)d)
+\item
+  \_\_\_ troisième page~: pour la nouveauté R1/D1
+\item
+  \_\_\_ quatrième page~: pour la nouveauté R1/D2
+\item
+  \_\_\_ cinquième page~: pour l'activité inventive
+\end{itemize}
+
+Sources~:
+
+\begin{itemize}
+\item
+  CPI
+\item
+  CBE
+\item
+  PCT
+\item
+  AJUB
+\end{itemize}
+
+Directives G
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Algorithme d'analyse de l'épreuve sur la brevetabilité}~:
+
+\begin{itemize}
+\item
+  demande de brevet français
+
+  \begin{itemize}
+  \item
+    nullité, juridiction compétence = tribunal judiciaire, source =
+    \textbf{L613-25 CPI}
+  \item
+    opposition, \_\_\_ = INPI, source = \textbf{L613-23 CPI}
+  \end{itemize}
+\item
+  demande de brevet européen
+
+  \begin{itemize}
+  \item
+    nullité, \_\_\_ = tribunal judicaire français (pas espagnol,
+    italien), source = \textbf{L614-12} pointe vers \textbf{A138CBE}
+  \item
+    nullité, \_\_\_ = JUB, source = \textbf{A65 AJUB} pointe vers
+    \textbf{A138CBE}
+  \item
+    opposition, \_\_\_\_ = OEB, source = \textbf{A100CBE}
+  \end{itemize}
+\end{itemize}
+
+Analyse des motifs~:
+
+\begin{itemize}
+\item
+  commencer par le motif e) puis remonter à a)
+\item
+  en général, \ul{écrire} que le motif A138(1)e) n'est pas applicable
+\item
+  en général, passer rapidement sur le motif b), un paragraphe au plus
+\item
+  écrire une phrase pour expliquer que l'invention est brevetable, pas
+  d'exception de la brevetabilité
+\end{itemize}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\end{longtable}
+
+\textbf{MOTIFS}
+
+\textbf{E) le titulaire du brevet européen n'avait pas le droit de
+l'obtenir en vertu de l'article 60, paragraphe 1}
+
+Passer rapidement dessus
+
+\textbf{C) l'objet du brevet européen s'étend au-delà du contenu de la
+demande telle qu'elle a été déposée // A123(2)}
+
+Ajout de matière nouvelle dans les revendications ou la description
+
+\textbf{D) la protection conférée par le brevet européen a été étendue
+// A123(3)}
+
+\emph{=\textgreater{} principe de protection des tiers}
+
+Augmenter la portée des revendications est interdit
+
+\ul{Piège 123(2) 123(3)}
+
+R1 telle que déposée~: Composition caractérisée en ce que la composition
+comprend un halogénure
+
+R1 modifiée~: Composition caractérisée en ce que la composition comprend
+un halogénure \ul{sauf le chlore} (non supportée) =\textgreater{}
+A123(2)
+
+R1 délivrée~: Composition caractérisée en ce que la composition comprend
+un halogénure \st{sauf le chlore} =\textgreater{} A123(3)
+
+\textbf{C) suffisance de description}
+
+=\textgreater{} \emph{peut on réaliser l'invention}
+
+R1~: \_\_\_ caractérisé en ce que l'élément X est \ul{rigide}
+
+Problème de clarté~: Il est rigide par rapport à quoi~?
+
+Mais, pas de problème pour expliquer comment réaliser l'invention.
+
+Paragraphe 1 de la description~: l'axe est parallèle à la surface
+
+Paragraphe 2 de la description~: l'axe est perpendiculaire à la surface
+
+\begin{itemize}
+\item
+  problème de suffisance de description
+\end{itemize}
+
+R1~: \_\_\_\_ caractérisée en ce que le produit X comprend 3 éléments
+dont A et B
+
+Il manque le troisième élément
+
+\begin{itemize}
+\item
+  problème de suffisance de description
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi})}
+\item
+  \textbf{nouveauté}
+\end{enumerate}
+
+\textbf{Définir les objets}
+
+Dans une même revendication
+
+R1~: A+B+C =\textgreater{} 1 objet
+
+R1~: A ou B ou C =\textgreater{} 3 objets
+
+R1~: A et/ou B et/ou C =\textgreater{} 7 objets à analyser
+
+Dans un ensemble de revendications
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+R1~=\textgreater{} 1 objet R1
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+R2 selon R1 =\textgreater{} 1 objet R1+R2 \\
+R3 selon R2 =\textgreater{} 1 objet R1+R2+R3 \\
+R4 selon R1 =\textgreater{} 1 objet R1+R4 \\
+R5 selon R1 ou R2 =\textgreater{} 2 objet~: R1+R5 et R1+R2+R5 \\
+\end{longtable}
+
+\textbf{Identifier \ul{pour chacun des objets} la date effective = la
+date à considérer comme référence}
+
+\begin{itemize}
+\item
+  \ul{dépôt de dépôt} de la demande
+\item
+  dépôt de dépôt de la demande de \ul{priorité}
+\item
+  les caractéristiques 123(2) sont considérées à la date de dépôt de la
+  demande
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5294}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4706}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+R1~=\textgreater{} 1 objet R1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DATE
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+R2 selon R1 =\textgreater{} 1 objet R1+R2 & DATE \\
+R3 selon R2 =\textgreater{} 1 objet R1+R2+R3 & DATE \\
+R4 selon R1 =\textgreater{} 1 objet R1+R4 & DATE \\
+R5 selon R1 ou R2 =\textgreater{} 2 objet~: R1+R5 et R1+R2+R5 & DATE \\
+\end{longtable}
+
+\textbf{Faire une ligne de temps}
+
+\emph{Au brouillon}
+
+\textbf{Prio =\textgreater{} objets dépôt =\textgreater{} objets}
+
+\textbf{\_\_\_\_\_\_\_\_\_\_\_54(2)\_\_\_\_\_\_\_\_\_\_\_54(3)
+dépôt\_\_\_\textbar\_\_\_\_\_\_\_54(3)
+pub\_\_\_\_\_\_\textbar\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\textgreater{}}
+
+\textbf{Date effective Date effective}
+
+Etats de la technique~:
+
+\begin{itemize}
+\item
+  divulgations 54(2)
+\item
+  demande de brevet 54(3)
+\end{itemize}
+
+Caractériser les divulgations 54(2)
+
+\begin{itemize}
+\item
+  Date
+\item
+  Objet
+\item
+  Circonstances
+\end{itemize}
+
+Caractériser les demandes de brevet 54(3) // L611-3~:
+
+\begin{itemize}
+\item
+  Date de dépôt
+\item
+  Date de publication
+\item
+  Territorialité
+
+  \begin{itemize}
+  \item
+    Pour un brevet français sont pris en compte~: d'autres demandes de
+    brevet français, demandes EP désignant FR, demandes internationales
+    désignant EP désignant FR
+  \item
+    Pour un brevet européen sont pris en compte~: d'autres demandes EP,
+    demandes internationales désignant EP
+  \end{itemize}
+\end{itemize}
+
+\textbf{Analyse de la nouveauté}
+
+\begin{itemize}
+\item
+  R1 = objet 1
+\item
+  R1~: A, B, C, (caractérisé en ce que) D, E
+\end{itemize}
+
+\emph{Au brouillon}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Objet 1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D1 opposable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D2 opposable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D3 opposable
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A & p5 ligne 23 & & \\
+B & x & & \\
+C & x & & \\
+D & P6 ligne 35 & & \\
+E & x & & \\
+\end{longtable}
+
+Rédiger sur une double page~:
+
+\begin{itemize}
+\item
+  D1 divulgue A (p5 ligne 23) et D (p6 ligne 35)
+\item
+  D1 ne divulgue pas B, C, E
+\item
+  Conclusion~: objet 1 définit par R1 nouveau par rapport à D1
+\end{itemize}
+
+\textbf{Analyse de l'activité inventive}
+
+\begin{itemize}
+\item
+  \hl{Lire cisaille T305/87}
+\item
+  Lire directives activité inventive
+\item
+  Avoir un raisonnement clair, logique, convaincant
+\item
+  Est-ce qu'un homme du métier \ul{à la date de dépôt} était en mesure
+  de combiner D1 et D2~?
+\item
+  Sélectionner un point de départ~: le document (i) chercher à résoudre
+  le même problème technique que l'invention et (ii) le même domaine
+  technique, si échoue (iii) il faut choisir le document qui présente le
+  plus grand nombre de caractéristiques communes avec l'invention
+\item
+  Regarder les effets technique. Regarder les effets de synergie entre
+  les effets techniques. Ne pas argumenter outre mesure sur la synergie.
+\item
+  Identifier le problème technique objectif~: \textbf{comment en partant
+  de D1, l'homme du métier est en mesure d'obtenir l'effet B, C, E.}
+\item
+  Définir l'homme du métier~: spécialiste du domaine technique. Définir
+  les connaissances générales de l'homme du métier.
+\item
+  Chercher \ul{le même effet} dans D2
+\item
+  Identifier la caractéristique liée à l'effet dans D2
+\item
+  Peut-on transposer cette caractéristique à D1
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2001}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2001}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+invention
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A & Reproduit & & & \\
+B & Pas reproduit~: Effet B p5 ligne 23 & Reproduit B~:
+
+Effet B' différent de B =\textgreater{} activité inventive & Reproduit
+B' différent de B~: effet B =\textgreater{} activité inventive & \\
+C & reproduit & & & \\
+D & reproduit & & & \\
+E & reproduit & & & \\
+\end{longtable}
+
+\textbf{1 effet technique ou synergie d'effets technique = 1 PTO}
+
+Position adoptée par le titulaire
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2001}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2001}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+invention
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A & Reproduit & & & \\
+B & Pas reproduit~: Effet B p5 ligne 23 & & & \\
+C & reproduit & & & \\
+D & Pas reproduit~: effet D p5 & & & \\
+E & reproduit & & & \\
+\end{longtable}
+
+\begin{itemize}
+\item
+  PTO1 sur l'effet B
+\item
+  PTO2 sur l'effet D
+\item
+  Un document par PTO
+\end{itemize}
+
+\textbf{SOURCES JURIDIQUES}
+
+\textbf{Article L613-25 CPI}
+
+Le brevet est déclaré nul par décision de justice :
+
+a) Si son objet n\textquotesingle est pas \hl{brevetable} aux termes des
+\href{https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006069414\&idArticle=LEGIARTI000006279404\&dateTexte=\&categorieLien=cid}{articles
+L. 611-10, L. 611-11 et L. 611-13 à L. 611-19 ;}
+
+b) S\textquotesingle il n\textquotesingle expose pas
+l\textquotesingle invention de façon suffisamment \hl{claire et
+complète} pour qu\textquotesingle un homme du métier puisse
+l\textquotesingle exécuter ;
+
+c) Si \hl{son objet s\textquotesingle étend au-delà du contenu de la
+demande telle qu\textquotesingle elle a été déposée} ou, lorsque le
+brevet a été délivré sur la base d\textquotesingle une demande
+divisionnaire, si son objet s\textquotesingle étend au-delà du contenu
+de la demande initiale telle qu\textquotesingle elle a été déposée ;
+
+d) Si, après limitation ou opposition, \hl{l\textquotesingle étendue de
+la protection conférée par le brevet a été accrue.}
+
+Si les motifs de nullité n\textquotesingle affectent le brevet
+qu\textquotesingle en partie, la nullité est prononcée sous la forme
+d\textquotesingle une limitation correspondante des revendications.
+
+Dans le cadre d\textquotesingle une action en nullité du brevet, son
+titulaire est habilité à limiter le brevet en modifiant les
+revendications ; le brevet ainsi limité constitue
+l\textquotesingle objet de l\textquotesingle action en nullité engagée.
+
+La partie qui, lors d\textquotesingle une même instance, procède à
+plusieurs limitations de son brevet, de manière dilatoire ou abusive,
+peut être condamnée à une amende civile d\textquotesingle un montant
+maximum de 3 000 euros, sans préjudice de dommages et intérêts qui
+seraient réclamés.
+
+\textbf{Article L613-23-1 CPI}
+
+L\textquotesingle opposition ne peut être fondée que sur un ou plusieurs
+des motifs suivants :\\
+\strut \\
+1° L\textquotesingle objet du brevet n\textquotesingle est pas
+brevetable aux termes des articles L. 611-10, L. 611-11 et L. 611-13 à
+L. 611-19 ;\\
+\strut \\
+2° Le brevet n\textquotesingle expose pas l\textquotesingle invention de
+façon suffisamment claire et complète pour qu\textquotesingle un homme
+du métier puisse l\textquotesingle exécuter ;\\
+\strut \\
+3° L\textquotesingle objet du brevet s\textquotesingle étend au-delà du
+contenu de la demande telle qu\textquotesingle elle a été déposée ou,
+lorsque le brevet a été délivré sur la base d\textquotesingle une
+demande divisionnaire, l\textquotesingle objet s\textquotesingle étend
+au-delà du contenu de la demande initiale telle qu\textquotesingle elle
+a été déposée.\\
+\strut \\
+L\textquotesingle opposition peut porter sur tout ou partie du brevet
+délivré.
+
+\textbf{Article L614-12 CPI}
+
+La nullité du brevet européen est prononcée en ce qui concerne la France
+par décision de justice pour l\textquotesingle un quelconque des motifs
+visés à \hl{l\textquotesingle article 138, paragraphe 1}, de la
+Convention de Munich.
+
+Si les motifs de nullité n\textquotesingle affectent le brevet
+qu\textquotesingle en partie, la nullité est prononcée sous la forme
+d\textquotesingle une limitation correspondante des revendications.
+
+Dans le cadre d\textquotesingle une action en nullité du brevet
+européen, son titulaire est habilité à limiter le brevet en modifiant
+les revendications conformément à l\textquotesingle article 105 bis de
+la convention de Munich ; le brevet ainsi limité constitue
+l\textquotesingle objet de l\textquotesingle action en nullité
+engagée.\\
+\strut \\
+La partie qui, lors d\textquotesingle une même instance, procède à
+plusieurs limitations de son brevet de manière dilatoire ou abusive peut
+être condamnée à une amende civile d\textquotesingle un montant maximum
+de 3 000 euros, sans préjudice de dommages et intérêts qui seraient
+réclamés.
+
+\textbf{Article 138(1) CBE}
+
+Sous réserve de
+\href{https://www.epo.org/fr/legal/epc/2020/a139.html}{l\textquotesingle article~139},
+le brevet européen ne peut être déclaré nul, avec effet pour un État
+contractant, que si~:
+
+a) l\textquotesingle objet du brevet européen n\textquotesingle est
+\hl{pas brevetable en vertu des
+\href{https://www.epo.org/fr/legal/epc/2020/a52.html}{articles~52} à
+\href{https://www.epo.org/fr/legal/epc/2020/a57.html}{57}~;}
+
+b) le brevet européen n\textquotesingle expose pas
+l\textquotesingle invention de façon \hl{suffisamment claire et
+complète} pour qu\textquotesingle un homme du métier puisse
+l\textquotesingle exécuter~;~
+
+c)\href{https://www.epo.org/fr/legal/epc/2020/a138.html\#conv.f171-note}{\textsuperscript{171}}
+\hl{l\textquotesingle objet du brevet européen s\textquotesingle étend
+au-delà du contenu de la demande telle qu\textquotesingle elle a été
+déposée} ou, lorsque le brevet a été délivré sur la base
+d\textquotesingle une demande divisionnaire ou d\textquotesingle une
+nouvelle demande déposée en vertu de
+\href{https://www.epo.org/fr/legal/epc/2020/a61.html}{l\textquotesingle article~61},
+si l\textquotesingle objet du brevet s\textquotesingle étend au-delà du
+contenu de la demande antérieure telle qu\textquotesingle elle a été
+déposée~;
+
+d) \hl{la protection conférée par le brevet européen a été étendue}~;
+ou~
+
+\hl{e) le titulaire du brevet européen n\textquotesingle avait pas le
+droit de l\textquotesingle obtenir en vertu de
+\href{https://www.epo.org/fr/legal/epc/2020/a60.html}{l\textquotesingle article~60,
+paragraphe~1}.}
+
+\textbf{Article 65 AJUB}
+
+\textbf{Article~65\\
+Décision sur la validité d\textquotesingle un brevet}
+
+1.La Juridiction statue sur la validité d\textquotesingle un brevet sur
+la base d\textquotesingle une action en nullité ou d\textquotesingle une
+demande reconventionnelle en nullité.~
+
+2.La Juridiction ne peut annuler un brevet, en tout ou en partie,
+\hl{que pour les motifs visés à
+\href{https://www.epo.org/fr/legal/epc/2020/a138.html}{l\textquotesingle article~138,
+paragraphe 1}, et à
+\href{https://www.epo.org/fr/legal/epc/2020/a139.html}{l\textquotesingle article~139,
+paragraphe 2, de la CBE}.}
+
+3.Sans préjudice de
+\href{https://www.epo.org/fr/legal/epc/2020/a138.html}{l\textquotesingle article~138,
+paragraphe 3, de la CBE}, si les motifs de nullité ne visent le brevet
+que partiellement, le brevet est limité par une modification
+correspondante des revendications et est annulé en partie.
+
+4.Dans la mesure où un brevet a été annulé, il est réputé avoir été,
+d\textquotesingle emblée, dépourvu des effets précisés aux
+\href{https://www.epo.org/fr/legal/epc/2020/a64.html}{articles 64} et
+\href{https://www.epo.org/fr/legal/epc/2020/a67.html}{67 de la CBE}.
+
+5.Lorsque la Juridiction, dans une décision définitive, annule un brevet
+en tout ou en partie, elle transmet une copie de la décision à
+l\textquotesingle Office européen des brevets et, s\textquotesingle il
+s\textquotesingle agit d\textquotesingle un brevet européen, à
+l\textquotesingle office national des brevets de tout Etat membre
+contractant concerné.~
+
+\textbf{Article 100 CBE\\
+Motifs d'opposition}
+
+L\textquotesingle opposition ne peut être fondée que sur les motifs
+suivants~:
+
+a) l\textquotesingle objet du brevet européen n\textquotesingle est
+\hl{pas brevetable en vertu des
+\href{https://www.epo.org/fr/legal/epc/2020/a52.html}{articles~52} à
+\href{https://www.epo.org/fr/legal/epc/2020/a57.html}{57}~;}
+
+b) le brevet européen n\textquotesingle expose pas
+l\textquotesingle invention de façon \hl{suffisamment claire et
+complète} pour qu\textquotesingle un homme du métier puisse
+l\textquotesingle exécuter~;~
+
+c) \hl{l\textquotesingle objet du brevet européen
+s\textquotesingle étend au-delà du contenu de la demande telle
+qu\textquotesingle elle a été déposée} ou, si le brevet a été délivré
+sur la base d\textquotesingle une demande divisionnaire ou
+d\textquotesingle une nouvelle demande déposée en vertu de
+\href{https://www.epo.org/fr/legal/epc/2020/a61.html}{l\textquotesingle article~61},
+au-delà du contenu de la demande antérieure telle
+qu\textquotesingle elle a été déposée.
+
+\end{document}

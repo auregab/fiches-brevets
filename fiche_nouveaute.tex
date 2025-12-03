@@ -1,0 +1,183 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{\ul{DETERMINER LES DIVULGATIONS OPPOSABLES CBE}}
+\end{enumerate}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2345}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5782}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1874}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{A54(2)~?}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Publication~?}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A54(2) & - avant date effective & \\
+Pas A54(2) & - à la date effective & \\
+& \textbf{Attention~!} & \\
+& - US dépôt \textless{} 29/11/2000 publiée à la délivrance & \\
+\textbf{A54(3)~?} & \textbf{DO = Demande EP~?} & \\
+A54(3) & - une demande de brevet EP publiée après date effective &
+A54(3) \\
+& - une demande de brevet euro-PCT publiée après date effective & A11(3)
+PCT \\
+pas A54(3) & - une demande de brevet EP déposée avant date effective,
+mais pas en instance à sa publication & J5/81 \\
+& \textbf{DO (= Etat contractant~?} & \\
+pas A54(3) & - une demande de brevet national d'un Etat contractant
+déposée avant date effective, publiée après date effective & T550/88 \\
+\textless==\textgreater{} A54(3) & - une demande d\textquotesingle un
+État contractant désigné, déposée avant et publiée le même jour ou
+
+après à l'encontre de la partie nationale du brevet européen dans cet
+État contractant & A139(2) \\
+& \textbf{EP = dépôt à/c 13/12/07~?} & \\
+A54(3) & - date de dépôt pas date de priorité \textgreater= 13/12/07
+& \\
+& - date de dépôt de la demande divisionnaire \textgreater=13/12/07 &
+A7(1) Acte \\
+& - DO = euro-PCT à l'encontre de EP & \\
+\textless==\textgreater{} A54(3) & - DO = PCT désignation directe d'un
+état contractant =\textgreater{} droit national antérieur & A139(2) \\
+& \textbf{EP = dépôt avant 13/12/07~?} & \\
+\textless==\textgreater{} A54(3) & - DO = EP antérieure déposée avant,
+publiée après que pour les états contractants désignés communs avec la
+demande postérieure & A54(4) CBE 1973, R23bis CBE 1973 \\
+\textless=/=\textgreater{} A54(3) & - les taxes de désignation de la EP
+antérieure n'ont pas été acquittées dans un délai de 6 mois /publication
+RRE au BEB & A79(2) CBE 1973 // R39 CBE 2000 \\
+& \textbf{DO = Euro-PCT~?} & \\
+A54(3) & \begin{minipage}[t]{\linewidth}\raggedright
+- DO\\
+(i) à la date d'entrée en phase régionale \textgreater= 13/12/07~;\\
+(ii) traduite dans une langue officielle OEB~;\\
+(iii) taxe de dépôt payée\strut
+\end{minipage} & A153(3) ou A153(4) CBE 2000, R165~; A78(2), R165,
+R159(1)c) \\
+\textless==\textgreater{} A54(3) &
+\begin{minipage}[t]{\linewidth}\raggedright
+- DO\\
+(i) à la date d'entrée en phase régionale \textless{} 13/12/07~;\\
+(ii) traduite dans une langue officielle OEB~;\\
+(iii) taxe de dépôt et \ul{taxe de désignation} payées\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+A158(1) CBE 1973,\\
+A22(1) ou A39(1) PCT, R106\strut
+\end{minipage} \\
+& \textbf{Dépôt PCT direct~?} & \\
+& - vérifier le paiement de la taxe annuelle à l'entrée en phase //
+3\textsuperscript{e} année & R159 \\
+& \textbf{Dépôt PCT sous prio~?} & \\
+& - pas de paiement de taxe annuelle à vérifier & R159 \\
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \textbf{\ul{DETERMINER LES DIVULGATIONS OPPOSABLES CPI}}
+\end{enumerate}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2345}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5782}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1874}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{L611-11 al. 2~?}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Publication~?}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+L611-11 al. 2~ & - avant date effective & \\
+\textbf{L611-11 al. 3~?} & \textbf{DO = FR, EP, PCT-FR~?} & \\
+L611-11 al. 3~ & - DO déposée avant et publiée après & \\
+\end{longtable}
+
+JUB~?
+
+\end{document}
