@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vérifier une première demande et exception}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{longtblr}{colspec = {X[3,l] X[8,l] X[3,l]}}
+
+\hline
+\textbf{\mydots 1ère dem.} & \textbf{Principe ?} & \epcart{87} \\
+
+\ok{= 1ère dem.} &
+-- vérifier qu’aucune demande antérieure ne remplit tous les critères de \epcart{87} &
+\\
+
+& \textbf{Même déposant ?} & \\
+
+\ok{= 1ère dem.} &
+-- demande déposée par B après une demande déposée par A et B &
+\epocase{t050788eu1}{T788/05} \\
+
+& -- demande déposée par A après une demande déposée par B &
+\epocase{t050005eu1}{T5/05} \\
+
+& \textbf{Même État ?} & \\
+
+\ok{= 1ère dem.} &
+-- dépôt dans un État CUP/OMC après un dépôt dans un État hors CUP/OMC &
+\\
+
+& \textbf{Même invention ?} & \\
+
+\ok{= 1ère dem.} &
+-- généralisation d'exemples (pas 1ère dem. pour les exemples spécifiques) &
+\epocase{t111222eu1}{T1222/11}, \epocase{g150001ex1}{G1/15} \\
+
+& -- plage de valeurs plus large (partie nouvelle seulement) &
+\epocase{t120282eu1}{T282/12} \\
+
+\nok{$\neq$ 1ère dem.} &
+-- demande non provisoire après provisoire &
+\\
+& -- continuation après US &
+\\
+
+\hline
+
+\textbf{Dem. ultérieure} &
+\textbf{Même invention ?} &
+\epcart{87} \\
+
+\ok{$\Longleftrightarrow$ 1ère dem.} &
+-- cf. section \ref{sec:verifier-priorite} &
+\epcart{87} \\
+
+& \textbf{Même État ?} &
+\epcart{87} \\
+
+\ok{$\Longleftrightarrow$ 1ère dem.} &
+-- au moins un État commun désigné &
+\epcart{79}, \href{https://www.wipo.int/pct/en/texts/rules/r4.htm}{R4.9a PCT} \\
+
+& \textbf{Demande antérieure retirée / abandonnée ?} &
+\epcart{87} \\
+
+\ok{$\Longleftrightarrow$ 1ère dem.} &
+-- apprécié à la date de dépôt &
+\\
+
+& -- fiction de retrait &
+\\
+
+& -- prise d’effet à expiration du délai &
+\epocase{g980002ep1}{G4/98} \\
+
+& \textbf{Inspection publique ?} &
+\epcart{87} \\
+
+\ok{$\Longleftrightarrow$ 1ère dem.} &
+-- apprécié à la date de dépôt &
+\\
+
+\nok{$\nleftrightarrow$ 1ère dem.} &
+-- notification FR non publiée &
+\href{https://www.legifrance.gouv.fr/}{L615-4 CPI} \\
+
+& -- consultation EP opposable au demandeur &
+\epcart{128} \\
+
+& \textbf{Pas de droits subsistants ?} &
+\epcart{87} \\
+
+\ok{$\Longleftrightarrow$ 1ère dem.} &
+-- apprécié à la date de dépôt &
+\\
+
+& -- voie de recours possible &
+\\
+
+\nok{$\nleftrightarrow$ 1ère dem.} &
+-- bénéfice de dépôt FR &
+\href{https://www.legifrance.gouv.fr}{L612-3 CPI},
+\href{https://www.legifrance.gouv.fr}{R612-25 CPI} \\
+
+& -- continuation US &
+\href{https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title35-section120}{35 USC 120} \\
+
+& -- divisionnaire EP &
+\epcart{76} \\
+
+& \textbf{Pas base de priorité ?} &
+\epcart{87} \\
+
+\ok{$\Longleftrightarrow$ 1ère dem.} &
+-- apprécié à la date de dépôt &
+\\
+
+\hline
+
+& \textbf{Conditions cumulatives ?} &
+\epcart{87} \\
+
+\ok{$\Longleftrightarrow$ 1ère dem.} &
+-- demande supplémentaire après retrait de la demande ultérieure &
+Mathely p.590 \\
+
+& -- dépôt ultérieur après une demande intermédiaire &
+Bodenhausen p.48 \\
+
+\hline
+
+& \textbf{Interdiction ?} & \\
+
+\ok{S’applique} &
+-- rev. priorité si XX = État CUP/OMC et YY = EP &
+\epcart{87} \\
+
+& -- rev. priorité CUP→CUP &
+\href{https://wipolex.wipo.int/en/text/288688}{Art. 4C(4) CUP} \\
+
+& -- rev. priorité OMC / OMC sauf CUP &
+\href{https://www.wto.org/english/docs_e/legal_e/27-trips_01_e.htm}{ADPIC} \\
+
+\nok{Ne s'applique pas} &
+-- objet B si ant. = A+B et ult. = A &
+\\
+
+& -- FR3 après FR1/FR2/EP, EP sous prio FR2, FR1 retiré &
+\href{https://www.legifrance.gouv.fr}{L612-3 CPI} \\
+
+\end{longtblr}
