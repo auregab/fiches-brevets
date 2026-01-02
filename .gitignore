@@ -4,5 +4,8 @@
 # But not directories (needed so Git can see files inside)
 !*/
 
-# Unignore all .Rmd files
+# Unignore all .tex files
 !*.tex
+
+# Unignore all .sty files
+!*.sty

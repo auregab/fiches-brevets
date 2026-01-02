@@ -1,0 +1,98 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fiche-style}[Style pour les fiches de brevet]
+
+% -------------------------
+% Page layout (optionnel)
+% -------------------------
+\RequirePackage[a4paper,margin=4cm]{geometry}
+
+% -------------------------
+% Encoding / fonts
+% -------------------------
+\RequirePackage{iftex}
+\ifPDFTeX
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage[utf8]{inputenc}
+\else
+  \RequirePackage{fontspec}
+\fi
+
+% Police par défaut : sans sérif
+\renewcommand{\familydefault}{\sfdefault}
+
+% -------------------------
+% Maths
+% -------------------------
+\RequirePackage{amsmath,amssymb}
+\newcommand\mydots{\makebox[1em][c]{.\hfil.\hfil.}}
+
+% -------------------------
+% Tables (tabularray)
+% -------------------------
+\RequirePackage{xcolor}
+\RequirePackage{tabularray}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{multirow}
+\RequirePackage{calc}
+
+% Traductions en français pour les tableaux longs tabularray
+\DefTblrTemplate{conthead-text}{default}{Suite de la page précédente}
+\DefTblrTemplate{contfoot-text}{default}{Suite page suivante}
+
+% Supprimer "Table X:" dans les légendes tabularray
+\DefTblrTemplate{caption-tag}{default}{}
+\DefTblrTemplate{caption-sep}{default}{}
+\DefTblrTemplate{caption-text}{default}{}
+
+% -------------------------
+% Hyperlinks
+% -------------------------
+\RequirePackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = purple,
+  urlcolor   = purple,
+  citecolor  = purple
+}
+
+% -------------------------
+% Paragraph formatting
+% -------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{3em}
+
+% -------------------------
+% MACROS GÉNÉRIQUES
+% -------------------------
+
+% EPC: articles et règles
+\newcommand{\epcart}[1]{%
+  \href{https://www.epo.org/fr/legal/epc/2020/a#1.html}{A#1}%
+}
+\newcommand{\epcrule}[1]{%
+  \href{https://www.epo.org/fr/legal/epc/2020/r#1.html}{R#1}%
+}
+
+% Jurisprudence EPO
+\newcommand{\epocase}[2]{%
+  \href{https://www.epo.org/en/boards-of-appeal/decisions/#1}{#2}%
+}
+
+% Directives EPO
+\newcommand{\epogl}[2]{%
+  \href{https://www.epo.org/en/legal/guidelines/2024/#1}{#2}%
+}
+
+% Statuts colorés
+\newcommand{\ok}[1]{\textcolor{teal}{#1}}
+\newcommand{\nok}[1]{\textcolor{red}{#1}}
+\newcommand{\delai}[1]{\textcolor{cyan}{#1}}
+\newcommand{\action}[1]{\textcolor{orange}{#1}}
+
+% -------------------------
+% Gabarit de colonnes pour tes tableaux
+% -------------------------
+% Exemple : 3 colonnes X[3,l] X[8,l] X[3,l]
+\newcommand{\fichecolspec}{X[3,l] X[8,l] X[5,l]}
