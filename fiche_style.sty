@@ -4,7 +4,18 @@
 % -------------------------
 % Page layout (optionnel)
 % -------------------------
-\RequirePackage[a4paper,margin=4cm]{geometry}
+\RequirePackage[
+  a4paper,
+  left=3cm,
+  right=3cm,
+  top=1cm,
+  bottom=2cm,
+  includehead,
+  includefoot,
+  headheight=14pt,
+  headsep=12mm,
+  footskip=12mm
+]{geometry}
 
 % -------------------------
 % Encoding / fonts
@@ -56,12 +67,37 @@
   citecolor  = purple
 }
 
+% saut de page après chaque section
+
+\usepackage{etoolbox}
+
+\pretocmd{\section}{\clearpage}{}{}
+
+
 % -------------------------
 % Paragraph formatting
 % -------------------------
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 \setlength{\emergencystretch}{3em}
+
+\RequirePackage{fancyhdr}
+
+\pagestyle{fancy}
+
+% Nettoyage des champs par défaut
+\fancyhf{}
+
+% Supprimer la barre sous l'en-tête
+\renewcommand{\headrulewidth}{0pt}
+
+
+% pied de page
+\fancyfoot[L]{\href{https://github.com/auregab/fiches-brevets}{github.com/auregab/fiches-brevets}}
+
+\RequirePackage{lastpage}
+
+\fancyfoot[C]{\thepage\ /\ \pageref{LastPage}}
 
 % -------------------------
 % MACROS GÉNÉRIQUES
