@@ -1,0 +1,93 @@
+\section{Schéma contrefaçon}
+
+% Préambule :
+% \usepackage{tikz}
+% \usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+
+\begin{tikzpicture}[
+  font=\sffamily,
+  >=Latex,
+  node distance=12mm and 20mm,
+  box/.style={
+    draw=cyan!70!black,
+    very thick,
+    rounded corners=2pt,
+    align=center,
+    inner sep=5pt,
+    minimum height=10mm,
+    text width=55mm
+  },
+  topbox/.style={
+    draw=black,
+    very thick,
+    align=center,
+    inner sep=6pt,
+    text width=55mm
+  },
+  ellred/.style={
+    draw=red,
+    very thick,
+    ellipse,
+    inner sep=3pt,
+    text width=40mm,
+    align=center
+  },
+  ellgreen/.style={
+    draw=green!60!black,
+    very thick,
+    ellipse,
+    inner sep=3pt,
+    text width=28mm,
+    align=center
+  },
+  lab/.style={font=\bfseries\scriptsize, text=blue!70!black},
+  arr/.style={->, very thick}
+]
+
+% --- Colonne centrale ---
+\node[topbox] (cmp) {Comparaison\\ Rev$^\circ$ / Objet litigieux};
+
+\node[box, below=of cmp] (diffq) {caractéristiques différentiantes de
+la revendication par rapport à l'objet litigieux?};
+
+\node[box, below=of diffq] (diffess) {caractéristiques différentiantes essentielles?};
+
+\node[box, below=of diffess] (alt) {\underline{Phase 1: interprétation fonctionnelle rev.} \\
+fonction caractéristiques différentiantes\\
+= fonction l'alternative de l'objet litigieux et\\
+résultat revendication = résultat de l'objet litigieux\\?};
+
+\node[box, below=of alt] (newfun) {\underline{Phase 2: limitation de l'interprétation}\\
+La fonction est-elle nouvelle ?};
+
+% --- Résultats ---
+\node[ellred, right=of diffq] (lit) {\textbf{contrefaçon littérale}\\
+L613-3 CPI, A25 AJUB};
+
+\node[ellred, right=of diffess] (sec) {\textbf{contrefaçon par différence secondaire}};
+
+\node[ellred, below=of newfun] (equiv) {\textbf{contrefaçon par équivalence}\\
+A69 CBE};
+
+\node[ellgreen, right=of alt] (nocf) {pas de contrefaçon};
+
+% --- Flèches principales ---
+\draw[arr] (cmp) -- (diffq);
+\draw[arr] (diffq) -- (diffess);
+\draw[arr] (diffess) -- (alt);
+\draw[arr] (alt) -- (newfun);
+
+% --- Branches OUI / NON ---
+\draw[arr] (diffq.east) -- node[lab, above] {NON} (lit.west);
+\draw[arr] (diffq.south) -- node[lab, right] {OUI} (diffess.north);
+
+\draw[arr] (diffess.east) -- node[lab, above] {NON} (sec.west);
+\draw[arr] (diffess.south) -- node[lab, right] {OUI} (alt.north);
+
+\draw[arr] (alt.east) -- node[lab, above] {NON} (nocf.west);
+\draw[arr] (alt.south) -- node[lab, right] {OUI} (newfun.north);
+
+\draw[arr] (newfun.south) -- node[lab, right] {OUI} (equiv.north);
+\draw[arr] (newfun.east) -- ++(18mm,0) node[lab, above] {NON} |- (nocf.south);
+
+\end{tikzpicture}
